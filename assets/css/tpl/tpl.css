@@ -1,0 +1,198 @@
+/* HEADER */
+	.header-default{
+		border-top: 4px solid var(--color-default);
+		padding: 1rem 0;
+		position: absolute;
+		top: 0; left: 0;
+		z-index: 3;
+		width: 100vw;
+	}
+	.header-default figure{}
+	.header-default figure img{
+		max-width: 150px;
+		width: 100vw;
+	}
+/* / HEADER */
+
+/* HEADER PAGE */
+	.header-page{
+		background-color: var(--color-default);
+		padding: 1rem 0;
+		width: 100vw;
+	}
+	.header-page figure{}
+	.header-page figure img{
+		max-width: 150px;
+		width: 100vw;
+	}
+/* / HEADER PAGE */
+
+/* NAV */
+	.nav-default{}
+	.nav-default a{
+		color: hsla(0, 100%, 100%, 1);
+		font-family: 'Roboto', sans-serif;
+		margin-left: 1rem;
+	}
+	.nav-default a p{
+		font-size: .8rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		text-shadow: 1px 1px 0 var(--color-default_hover);
+	}
+/* / NAV */
+
+/* BANNER HOME */
+	.banner-home{
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		max-width: 100%; max-height: 100%;
+		width: 100vw; height: 100vh;
+		position: relative;
+		z-index: 1;
+	}
+	.banner-home::before{
+		content: "";
+		background-color: hsla(0, 0%, 0%, .6);
+		max-width: 100%; max-height: 100%;
+		width: 100vw; height: 100vh;
+		position: absolute;
+		top: 0; left: 0;
+		z-index: 2;
+	}
+/* / BANNER HOME */
+
+/* FOOTER DEFAULT */
+	.footer-default{padding: 1rem;}
+	.footer-default small{}
+	.footer-default small p{
+		color: hsla(0, 0%, 0%, .6);
+		font-family: 'Roboto', sans-serif;
+		font-size: .6rem;
+	}
+	.footer-default small p i{
+		color: tomato;
+		margin-left: .2rem;
+	}
+/* / FOOTER DEFAULT */
+
+/* SOCIAL MEDIA */
+	.social-media{margin: var(--social-media_margin, 1rem 0);}
+	.social-media li{
+		background-color: var(--social-media_background-ic, transparent);
+		padding: var(--social-media_padding-ic, .6rem);
+		margin: var(--social-media_margin-ic, 0);
+	}
+	.social-media li:hover{background-color: var(--social-media_background-ic_hover, transparent);}
+	.social-media li a{}
+	.social-media li a i{font-size: var(--social-media_font-size, 1.2rem);}
+	.social-media .ic-twitter{color: var(--social-media_color_ic, hsl(197,100%,47%));}
+	.social-media .ic-gplus{color: var(--social-media_color_ic, hsl(7,64%,52%));}
+	.social-media .ic-facebook{color: var(--social-media_color_ic, hsl(221,44%,41%));}
+	.social-media .ic-instagram{color: var(--social-media_color_ic, hsl(352,59%,57%));}
+	.social-media .ic-youtube{color: var(--social-media_color_ic, hsl(358,79%,45%));}
+	.social-media .ic-linkedin{color: var(--social-media_color_ic, hsl(201,100%,35%));}
+	.social-media .ic-skype{color: var(--social-media_color_ic, hsl(196,100%,47%));}
+	.social-media .ic-whatsapp{color: var(--social-media_color_ic, hsl(142,70%,49%));}
+	.social-media .ic-twitch{color: var(--social-media_color_ic, hsl(261,43%,45%));}
+	.social-media .ic-blogger{color: var(--social-media_color_ic, hsl(14,100%,57%));}
+	.social-media .ic-github{color: var(--social-media_color_ic, hsl(0,0%,0%));}
+	.social-media .ic-slack{color: var(--social-media_color_ic, hsl(189,61%,69%));}
+	.social-media .ic-snapchat{color: var(--social-media_color_ic, hsl(59,100%,50%));}
+	.social-media .ic-steam{color: var(--social-media_color_ic, hsl(0,0%,0%));}
+	.social-media .ic-viber{color: var(--social-media_color_ic, hsl(276,53%,32%));}
+	/* HOVER */
+	.social-media .ic-twitter:hover{color: var(--social-media_color_ic-hover, hsl(197,100%,47%));}
+	.social-media .ic-gplus:hover{color: var(--social-media_color_ic-hover, hsl(7,64%,52%));}
+	.social-media .ic-facebook:hover{color: var(--social-media_color_ic-hover, hsl(221,44%,41%));}
+	.social-media .ic-instagram:hover{color: var(--social-media_color_ic-hover, hsl(352,59%,57%));}
+	.social-media .ic-youtube:hover{color: var(--social-media_color_ic-hover, hsl(358,79%,45%));}
+	.social-media .ic-linkedin:hover{color: var(--social-media_color_ic-hover, hsl(201,100%,35%));}
+	.social-media .ic-skype:hover{color: var(--social-media_color_ic-hover, hsl(196,100%,47%));}
+	.social-media .ic-whatsapp:hover{color: var(--social-media_color_ic-hover, hsl(142,70%,49%));}
+	.social-media .ic-twitch:hover{color: var(--social-media_color_ic-hover, hsl(261,43%,45%));}
+	.social-media .ic-blogger:hover{color: var(--social-media_color_ic-hover, hsl(14,100%,57%));}
+	.social-media .ic-github:hover{color: var(--social-media_color_ic-hover, hsl(0,0%,0%));}
+	.social-media .ic-slack:hover{color: var(--social-media_color_ic-hover, hsl(189,61%,69%));}
+	.social-media .ic-snapchat:hover{color: var(--social-media_color_ic-hover, hsl(59,100%,50%));}
+	.social-media .ic-steam:hover{color: var(--social-media_color_ic-hover, hsl(0,0%,0%));}
+	.social-media .ic-viber:hover{color: var(--social-media_color_ic-hover, hsl(276,53%,32%));}
+/* SOCIAL MEDIA */
+
+/* BUTTONS */
+	[class*="-ic"]{
+		-webkit-transition: all .9s ease;
+		-moz-transition: all .9s ease;
+		-ms-transition: all .9s ease;
+		-o-transition: all .9s ease;
+		transition: all .9s ease;
+		border: none;
+		border-radius: 2px;
+		font-family: var(--regular);
+		padding: .6rem 1rem;
+		letter-spacing: .03rem;
+		text-shadow: 1px 1px 0 hsla(0, 0%, 37%, 0.2);
+	}
+	[class*="-ic"]::before{
+		font-family: 'Font Awesome\ 5 Free';
+		font-weight: 900;
+		font-size: .8rem;
+		margin: 0 .4rem 0 0;
+	}
+	/* REFRESH BUTTON */
+		.refresh-ic{
+			background-color: var(--color-refresh-bg, hsla(0, 0%, 95%, 1));
+			color: var(--color-refresh, hsla(0, 0%, 36%, 1));
+		}
+		.refresh-ic:hover{
+			background-color: var(--color-refresh-bg_hover, hsla(0, 0%, 88%, 1));
+			color: var(--color-refresh_hover, hsla(0, 0%, 22%, 1));
+		}
+		.refresh-ic::before{content: '\f2f1';}
+	/* / REFRESH BUTTON */
+
+	/* CHECKOUT BUTTON */
+		.checkout-ic{
+			background-color: var(--color-checkout-bg, hsla(137, 49%, 52%, 1));
+			color: var(--color-checkout, hsla(0, 0%, 100%, 1));
+		}
+		.checkout-ic:hover{
+			background-color: var(--color-checkout-bg_hover, hsla(137, 49%, 42%, 1));
+			color: var(--color-checkout_hover, hsla(0, 0%, 100%, 1));
+		}
+		.checkout-ic::before{content: '\f07a';}
+	/* / CHECKOUT BUTTON */
+
+	/* DANGER BUTTON */
+		.danger-ic{
+			background-color: var(--color-danger-bg, hsla(1, 82%, 63%, 1));
+			color: var(--color-danger, hsla(0, 0%, 100%, 1));
+		}
+		.danger-ic:hover{
+			background-color: var(--color-danger-bg_hover, hsla(1, 82%, 53%, 1));
+			color: var(--color-danger_hover, hsla(0, 0%, 100%, 1));
+		}
+		.danger-ic::before{content: '\f2ed';}
+	/* / DANGER BUTTON */
+
+	/* INFO BUTTON */
+		.info-ic{
+			background-color: var(--color-info-bg, hsla(196, 63%, 49%, 1));
+			color: var(--color-info, hsla(0, 0%, 100%, 1));
+		}
+		.info-ic:hover{
+			background-color: var(--color-info-bg_hover, hsla(196, 63%, 35%, 1));
+			color: var(--color-info_hover, hsla(0, 0%, 100%, 1));
+		}
+		.info-ic::before{content: '\f05a';}
+	/* / INFO BUTTON */
+/* / BUTTONS */
+
+/* Tablet*/
+@media (max-width: 1024px){}
+/* Mobile */
+@media (max-width: 812px) {}
+/*Navegador Mozilla*/
+@-moz-document url-prefix(){}

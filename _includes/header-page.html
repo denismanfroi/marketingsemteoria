@@ -1,0 +1,17 @@
+<header id="header-page" class="header-page d-flex aic jcc flex1 flex-wrap anime">
+  <div data-limit="1100" class="d-flex aic jcb">
+    <a href="{{ site.baseurl }}/">
+      <figure class="d-flex aic jcc">
+        <img src="{{ site.url }}{{ site.baseurl }}/assets/media/image/dvs/logo-marketing-sem-teoria-branco.png" alt="Marketing Sem Teoria">
+      </figure>
+    </a>
+
+    <nav id="nav-default" class="nav-default d-flex aic jcc">
+      {% for page in site.pages %}
+        <a href="{{ page.url  | prepend: site.baseurl }}">
+          <p>{{ page.title }}</p>
+        </a>
+      {% endfor %}
+    </nav>
+  </div>
+</header>
